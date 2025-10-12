@@ -426,7 +426,7 @@ def stage3_run(ligand, smiles, output, ffligand, ffprotein, calibration,
 #        elif forcefield == 'opls': # Warning: currently not available!
 #            converter = OplsForceFieldPlugin()
         elif forcefield == 'cgenff':
-            converter = CgenForceFieldPlugin()
+            converter = CgenffForceFieldPlugin()
         converters.append(converter)
     print('converters:', converters)
 
