@@ -216,7 +216,7 @@ class CgenffForceFieldPlugin(ForceFieldPlugin):
         self._postConvert2GromacsClean(output)
 
 
-    def genTop(self, output, forcefield = 'charmm27', solvent = None, verbose = False):
+    def genTop(self, output, forcefield = 'charmm36', solvent = None, verbose = False):
         """ Generate a GROMACS topology file. If solvent is specified a line
         is added to include the parameters for that solvent. """
 
@@ -388,7 +388,7 @@ class CgenffForceFieldPlugin(ForceFieldPlugin):
 
         return topologyFileName
 
-    def coordsToTopology(self, output, coordsFile, forcefield = 'charmm27', verbose = False):
+    def coordsToTopology(self, output, coordsFile, forcefield = 'charmm36', verbose = False):
         """ Generate topology and .gro coordinates from a pdb file.
         The topology is generated using pdb2gmx.
         Return .top file and .gro file """
